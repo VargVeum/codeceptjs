@@ -1,0 +1,18 @@
+{
+    "name": "codeceptjs-tests",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "run-all-ui-tests": "npx codeceptjs run --reporter mochawesome"
+    },
+    "devDependencies": {
+        "@codeceptjs/configure": "^0.10.0",
+        "@codeceptjs/examples": "^1.2.1",
+        "@codeceptjs/ui": "^0.6.1",
+        "codeceptjs": "^3.5.2",
+        "playwright": "^1.36.1"
+    },
+    "dependencies": {
+        "mochawesome": "^7.1.3"
+    }
+}

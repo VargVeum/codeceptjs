@@ -1,0 +1,236 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 3,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-07-20T07:56:59.776Z",
+    "end": "2023-07-20T07:57:35.010Z",
+    "duration": 35234,
+    "testsRegistered": 4,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "99ceda1e-885a-4a9b-acbe-5ed08c1048d7",
+      "title": "",
+      "fullFile": "C:\\Users\\Marty\\Desktop\\codecept\\codeceptjs\\specs\\tests\\login_test.js",
+      "file": "\\specs\\tests\\login_test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "effcebe0-5b6d-4aa4-8c56-265d8c0580be",
+          "title": "Login tests",
+          "fullFile": "C:\\Users\\Marty\\Desktop\\codecept\\codeceptjs\\specs\\tests\\login_test.js",
+          "file": "\\specs\\tests\\login_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite in \"Login tests\"",
+              "fullTitle": "Login tests \"before all\" hook: codeceptjs.beforeSuite in \"Login tests\"",
+              "timedOut": false,
+              "duration": 447,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "ab5e1b4a-c0b4-4224-8988-2dadd87010c5",
+              "parentUUID": "effcebe0-5b6d-4aa4-8c56-265d8c0580be",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before in \"Login tests\"",
+              "fullTitle": "Login tests \"before each\" hook: codeceptjs.before in \"Login tests\"",
+              "timedOut": false,
+              "duration": 174,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {},
+              "uuid": "d2f0b55d-5875-49cd-a8c0-bb9ea6570478",
+              "parentUUID": "effcebe0-5b6d-4aa4-8c56-265d8c0580be",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite in \"Login tests\"",
+              "fullTitle": "Login tests \"after all\" hook: codeceptjs.afterSuite in \"Login tests\"",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "ca9dec64-88c3-436b-959e-538bd02fe5cc",
+              "parentUUID": "effcebe0-5b6d-4aa4-8c56-265d8c0580be",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs in \"Login tests\"",
+              "fullTitle": "Login tests \"after each\" hook: finalize codeceptjs in \"Login tests\"",
+              "timedOut": false,
+              "duration": 55,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "237f5f4a-736f-455c-a865-980a4734d93f",
+              "parentUUID": "effcebe0-5b6d-4aa4-8c56-265d8c0580be",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Login with valid credentials",
+              "fullTitle": "Login tests: Login with valid credentials",
+              "timedOut": false,
+              "duration": 12931,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"Login_with_ffd904d7-aa17-4468-bdab-c352fc14c2af.failed.png\"",
+              "code": "loginPage }) => {\n    loginPage.openUrl('https://dashboard.visme.co/v2/login')\n        .checkContent('Create amazing content')\n        .fillEmailForm('test@test.com')\n        .fillPasswordForm('qwerty123')\n        .clickSubmitButton()\n        .checkUrl('Invalid email/password!')\n        // this test will be failed for negative report",
+              "err": {
+                "message": null,
+                "estack": null,
+                "diff": "- https://dashboard.visme.co/v2/login\n+ Invalid email/password!\n"
+              },
+              "uuid": "ffd904d7-aa17-4468-bdab-c352fc14c2af",
+              "parentUUID": "effcebe0-5b6d-4aa4-8c56-265d8c0580be",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login with invalid email",
+              "fullTitle": "Login tests: Login with invalid email",
+              "timedOut": false,
+              "duration": 7015,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage }) => {\n    loginPage.openUrl('https://dashboard.visme.co/v2/login')\n        .checkContent('Create amazing content')\n        .fillEmailForm('test@test')\n        .fillPasswordForm('qwerty123')\n        .clickSubmitButton()\n        .checkContent('Recaptcha error')",
+              "err": {},
+              "uuid": "834aa0a4-56d2-49b9-a260-a4b176c9fd1f",
+              "parentUUID": "effcebe0-5b6d-4aa4-8c56-265d8c0580be",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login with invalid password",
+              "fullTitle": "Login tests: Login with invalid password",
+              "timedOut": false,
+              "duration": 6944,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage }) => {\n    loginPage.openUrl('https://dashboard.visme.co/v2/login')\n        .checkContent('Create amazing content')\n        .fillEmailForm('test@test.com')\n        .fillPasswordForm('q')\n        .clickSubmitButton()\n        .checkContent('Recaptcha error')",
+              "err": {},
+              "uuid": "7c39ee66-ca3d-469a-9afe-1649d1e31c03",
+              "parentUUID": "effcebe0-5b6d-4aa4-8c56-265d8c0580be",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login with empty fields",
+              "fullTitle": "Login tests: Login with empty fields",
+              "timedOut": false,
+              "duration": 6868,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage }) => {\n  loginPage.openUrl('https://dashboard.visme.co/v2/login')\n      .checkContent('Create amazing content')\n      .fillEmailForm('')\n      .fillPasswordForm('')\n      .clickSubmitButton()\n      .checkContent('Email required!')",
+              "err": {},
+              "uuid": "a5227d38-3910-4ff9-9f0a-95a2e9a881d6",
+              "parentUUID": "effcebe0-5b6d-4aa4-8c56-265d8c0580be",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "834aa0a4-56d2-49b9-a260-a4b176c9fd1f",
+            "7c39ee66-ca3d-469a-9afe-1649d1e31c03",
+            "a5227d38-3910-4ff9-9f0a-95a2e9a881d6"
+          ],
+          "failures": [
+            "ffd904d7-aa17-4468-bdab-c352fc14c2af"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 33758,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {},
+      "version": "6.2.0"
+    }
+  }
+}
